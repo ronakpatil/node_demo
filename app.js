@@ -1,5 +1,14 @@
+var counter = require('./count');
+var stuff = require('./stuff');
+
 //var time = 0;
 console.log('hey ninjas');
+
+
+
+console.log(counter.counter(['Shaun', 'Crystal', 'Reyan']));
+console.log(stuff.adder(2,1));
+console.log(stuff.adder(stuff.pi,5));
 //setTimeout(function(){
 //	console.log('3 seconds have passed')
 //}, 3000)
@@ -16,12 +25,12 @@ console.log('hey ninjas');
 // console.log(__dirname);
 // console.log(__filename);
 
-function callFunction(Fun){
-	Fun();
-};
+// function callFunction(Fun) {
+//     Fun();
+// };
 
-var sayBye = function(){
-	console.log('Bye');
-}
+// var sayBye = function() {
+//     console.log('Bye');
+// }
 
-callFunction(sayBye);
+// callFunction(sayBye);
