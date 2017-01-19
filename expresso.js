@@ -13,12 +13,20 @@ app.set('view engine', 'ejs');
 // 	res.send('This is a contact page');
 // });
 
+// app.get('/', function(req, res) {
+//     res.sendFile(__dirname + '/index.html');
+// });
+
+// app.get('/contact', function(req, res) {
+//     res.sendFile(__dirname + '/contact.html');
+// });
+
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.html');
+    res.render('index');
 });
 
 app.get('/contact', function(req, res) {
-    res.sendFile(__dirname + '/contact.html');
+    res.render('contact');
 });
 
 app.get('/profile/:id', function(req, res) {
